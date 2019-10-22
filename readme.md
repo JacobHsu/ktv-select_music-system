@@ -1,12 +1,18 @@
 **7天撸完KTV点歌系统,含后台管理系统(完整版)**
 
-## 最近手有点痒琢磨着做个啥,朝思暮想还是写个KTV点歌系统,模拟了一下KTV开户的思路,7天累死我了,不过技术点还挺多的,希望你可以看完（〜^㉨^)〜
+KTV点歌系统,[模拟了一下KTV开户的思路](https://juejin.im/post/5dac3b4351882576534d33d7?utm_source=gold_browser_extension)
+
 
 **用Node(Express)教你写KTV点歌系统，包括前台内容和后台管理系统，整合Express框架和Mongodb数据库服务器开发；教你用Vue.JS，ElementUI和iViewUI写出超漂亮的页面,随心点歌随心听**
 
-```!
-作者原创文章, 转载前请留言或联系作者!!!
-```
+# Usage
+
+`$ npm run server`  
+[nodemon] starting `node index index.js`  
+Server is running on port [8633].  
+Mongodb is Connected.Please have a great coding.  
+
+\ktv-admin> `$ npm run admin`  
 
 # 思维导图
 ![](README/2019-10-17_093636.png)
@@ -149,7 +155,7 @@ ktv-client
 # **项目启动介绍**
 1. 首先不要改变服务器端口,否则报错.
 2. 你需要在装有Node和Vue的环境中测试，如果其中一个没有请先下载([Node下载](https://nodejs.org/en/),[Vue下载](https://cn.vuejs.org/v2/guide/installation.html)).
-3. 首先在最外层文件夹下载依赖:npm install 下载后端依赖, 
+3. 首先在最外层文件夹下载依赖:`npm install` 下载后端依赖, 
 4. 接着进入ktv-client, npm install 下载用户前端依赖.
 5.  接着进入ktv-admin, npm install 下载管理员前端依赖.
 6. 以上工作完成后,使用命令`npm run server 或者 node index &`命令启动Node服务器，启动成功会显示:
@@ -161,6 +167,17 @@ ktv-client
 8. 进入ktv-admin,打开命令板,使用命令`npm run admin`启动后台管理系统项目,启动成功后用浏览器访问`http://localhost:xxxx`
 9. 本例中将Mongodb部署在本地电脑上，如果你仔细阅读了这篇文档，启动项目应该是很容易的。如果你把Mongodb部署在其他地方，请自行修改`secret/mongodbURI.js`配置文件信息。
 10.项目启动成功
+
+
+# Note
+
+[`nodemon`](https://www.npmjs.com/package/nodemon) 能夠取代 node 指令來監視程式，當修改程式 (只要是有關聯的) 時都會自動重新啟動服務。  
+
+[在Windows上安裝 MongoDB](https://ithelp.ithome.com.tw/articles/10186324) 
+https://www.cnblogs.com/xybaby/p/9460634.html  
+[免费试用MongoDB云数据库 （MongoDB Atlas）教程](https://www.cnblogs.com/xybaby/p/9460634.html)  
+https://cloud.mongodb.com 
+> MongoDB Atlas > https://cloud.mongodb.com >  Cluster0 > CONNecT > Choose a connection method > Connect Your Application  
 
 # 技术攻关
 ## Date方法
